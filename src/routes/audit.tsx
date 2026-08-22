@@ -36,12 +36,11 @@ function AuditPage() {
   const [from, setFrom] = useState("");
   const [to, setTo] = useState("");
 
-  const params = {
-    actor: actor.trim() || undefined,
-    role: role === "all" ? undefined : role,
-    from: from || undefined,
-    to: to || undefined,
-  };
+  const params: { actor?: string; role?: string; from?: string; to?: string } = {};
+  if (actor.trim()) params.actor = actor.trim();
+  if (role !== "all") params.role = role;
+  if (from) params.from = from;
+  if (to) params.to = to;
 
   const auditQuery = useQuery({
     queryKey: ["audit", params],
