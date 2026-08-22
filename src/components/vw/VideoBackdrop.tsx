@@ -32,15 +32,15 @@ export function VideoBackdrop({
         className={cn(
           "size-full object-cover",
           hero
-            ? "opacity-[0.28] blur-[1px] saturate-[0.85]"
-            : "opacity-[0.09] blur-[2px] saturate-[0.7]",
+            ? "opacity-[0.5] blur-[1px] saturate-[0.9]"
+            : "opacity-[0.18] blur-[2px] saturate-[0.75]",
         )}
       />
       {/* readability scrim — keeps text/data contrast intact in both themes */}
       <div
         className={cn(
           "absolute inset-0 bg-background",
-          hero ? "opacity-55" : "opacity-75",
+          hero ? "opacity-40" : "opacity-65",
         )}
       />
       <div className="absolute inset-0 bg-gradient-to-b from-background/70 via-background/30 to-background/80" />
