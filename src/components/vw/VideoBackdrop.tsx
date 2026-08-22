@@ -1,5 +1,6 @@
 import { cn } from "@/lib/utils";
 import leaves from "@/assets/leaves-bg.mp4.asset.json";
+import poster from "@/assets/leaves-poster.jpg.asset.json";
 
 /**
  * Ambient botanical motion behind the UI. Deliberately very low contrast:
@@ -24,6 +25,7 @@ export function VideoBackdrop({
     >
       <video
         src={leaves.url}
+        poster={poster.url}
         autoPlay
         muted
         loop
