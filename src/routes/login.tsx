@@ -171,7 +171,8 @@ function LoginPage() {
   return (
     <div className="flex min-h-screen flex-col">
       <div className="grid flex-1 lg:grid-cols-2">
-        <section className="relative flex flex-col justify-between overflow-hidden border-b border-border bg-surface p-8 lg:border-r lg:border-b-0 lg:p-12">
+        <section className="relative isolate flex flex-col justify-between overflow-hidden border-b border-border bg-surface/70 p-8 lg:border-r lg:border-b-0 lg:p-12">
+          <VideoBackdrop variant="hero" />
           <NodeField />
           <div className="relative">
             <span className="inline-flex items-center gap-2 text-sm font-semibold text-foreground">
@@ -195,9 +196,11 @@ function LoginPage() {
             {DISCLAIMER}
           </p>
         </section>
-        <section className="flex items-center justify-center bg-background p-8">
+        <section className="relative isolate flex items-center justify-center bg-background p-8">
+          <VideoBackdrop />
           <SignInPanel />
         </section>
+
       </div>
       <footer className="border-t border-border bg-surface/60 px-4 py-3">
         <p className="mono text-center text-[11px] text-muted-foreground">{DISCLAIMER}</p>
