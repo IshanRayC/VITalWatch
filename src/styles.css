@@ -196,6 +196,19 @@
   animation: vw-pulse-once 1.4s ease-out 1;
 }
 
+/* Slow drifting node field on the sign-in panel. */
+@keyframes vw-node-drift {
+  0%,
+  100% {
+    transform: translateY(0);
+    opacity: 0.5;
+  }
+  50% {
+    transform: translateY(2.5px);
+    opacity: 1;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
