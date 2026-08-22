@@ -19,6 +19,8 @@ import {
 } from "@/lib/roles";
 import { AlertBanner } from "@/components/vw/AlertBanner";
 import { RoleBadge } from "@/components/vw/RoleBadge";
+import { VideoBackdrop } from "@/components/vw/VideoBackdrop";
+
 import type { Role } from "@/types/vitalwatch";
 
 export const DISCLAIMER = "Demo system — synthetic data only. No real patient data at any stage.";
