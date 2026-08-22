@@ -68,11 +68,8 @@ function NodeField() {
           cy={n.y}
           r={0.7}
           fill="var(--color-primary)"
-          animate={
-            reduced
-              ? { opacity: 0.7 }
-              : { cy: [n.y, n.y + 2.5, n.y], opacity: [0.5, 1, 0.5] }
-          }
+          initial={{ opacity: 0.5, y: 0 }}
+          animate={reduced ? { opacity: 0.7 } : { opacity: [0.5, 1, 0.5], y: [0, 2.5, 0] }}
           transition={{ duration: n.d, repeat: Infinity, ease: "easeInOut" }}
         />
       ))}
