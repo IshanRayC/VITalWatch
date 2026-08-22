@@ -37,13 +37,15 @@ export function VideoBackdrop({
         className="absolute inset-0 size-full object-cover brightness-[0.6]"
       />
       {/* readability scrim — keeps text/data contrast intact in both themes */}
+      <div className={cn("absolute inset-0 bg-background", scrim)} />
       <div
         className={cn(
-          "absolute inset-0 bg-background",
-          hero ? "opacity-40" : "opacity-60",
+          "absolute inset-0",
+          variant === "cinematic"
+            ? "bg-gradient-to-br from-background/60 via-background/10 to-background/70"
+            : "bg-gradient-to-b from-background/70 via-background/30 to-background/80",
         )}
       />
-      <div className="absolute inset-0 bg-gradient-to-b from-background/70 via-background/30 to-background/80" />
     </div>
   );
 }
