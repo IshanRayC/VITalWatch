@@ -10,6 +10,7 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as AeRouteImport } from './routes/ae'
 import { Route as AlertsRouteImport } from './routes/alerts'
 import { Route as AuditRouteImport } from './routes/audit'
 import { Route as LoginRouteImport } from './routes/login'
@@ -20,6 +21,11 @@ import { Route as StudyStudyIdRouteImport } from './routes/study.$studyId'
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AeRoute = AeRouteImport.update({
+  id: '/ae',
+  path: '/ae',
   getParentRoute: () => rootRouteImport,
 } as any)
 const AlertsRoute = AlertsRouteImport.update({
@@ -55,6 +61,7 @@ const StudyStudyIdRoute = StudyStudyIdRouteImport.update({
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/ae': typeof AeRoute
   '/alerts': typeof AlertsRoute
   '/audit': typeof AuditRoute
   '/login': typeof LoginRoute
@@ -64,6 +71,7 @@ export interface FileRoutesByFullPath {
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/ae': typeof AeRoute
   '/alerts': typeof AlertsRoute
   '/audit': typeof AuditRoute
   '/login': typeof LoginRoute
@@ -74,6 +82,7 @@ export interface FileRoutesByTo {
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/ae': typeof AeRoute
   '/alerts': typeof AlertsRoute
   '/audit': typeof AuditRoute
   '/login': typeof LoginRoute
@@ -85,6 +94,7 @@ export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
   fullPaths:
     | '/'
+    | '/ae'
     | '/alerts'
     | '/audit'
     | '/login'
@@ -94,6 +104,7 @@ export interface FileRouteTypes {
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
+    | '/ae'
     | '/alerts'
     | '/audit'
     | '/login'
@@ -103,6 +114,7 @@ export interface FileRouteTypes {
   id:
     | '__root__'
     | '/'
+    | '/ae'
     | '/alerts'
     | '/audit'
     | '/login'
@@ -113,6 +125,7 @@ export interface FileRouteTypes {
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  AeRoute: typeof AeRoute
   AlertsRoute: typeof AlertsRoute
   AuditRoute: typeof AuditRoute
   LoginRoute: typeof LoginRoute
@@ -128,6 +141,13 @@ declare module '@tanstack/react-router' {
       path: '/'
       fullPath: '/'
       preLoaderRoute: typeof IndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/ae': {
+      id: '/ae'
+      path: '/ae'
+      fullPath: '/ae'
+      preLoaderRoute: typeof AeRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/alerts': {
@@ -177,6 +197,7 @@ declare module '@tanstack/react-router' {
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  AeRoute: AeRoute,
   AlertsRoute: AlertsRoute,
   AuditRoute: AuditRoute,
   LoginRoute: LoginRoute,
