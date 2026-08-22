@@ -62,14 +62,21 @@ function NodeField() {
         );
       })}
       {nodes.map((n) => (
-        <motion.circle
+        <circle
           key={n.id}
           cx={n.x}
           cy={n.y}
           r={0.7}
           fill="var(--color-primary)"
-          animate={reduced ? undefined : { cy: [n.y, n.y + 2.5, n.y], opacity: [0.5, 1, 0.5] }}
-          transition={{ duration: n.d, repeat: Infinity, ease: "easeInOut" }}
+          opacity={0.65}
+          style={
+            reduced
+              ? undefined
+              : {
+                  animation: `vw-node-drift ${n.d}s ease-in-out ${n.id * 0.2}s infinite`,
+                  transformBox: "fill-box",
+                }
+          }
         />
       ))}
     </svg>

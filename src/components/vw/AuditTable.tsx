@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from "react";
+import { Fragment, useEffect, useMemo, useState } from "react";
 import { AnimatePresence, motion, useReducedMotion } from "motion/react";
 import {
   Ban,
@@ -223,9 +223,8 @@ export function AuditTable({
                 const walking = walkingSeq === event.seq;
                 const isOpen = expanded === event.id;
                 return (
-                  <>
+                  <Fragment key={event.id}>
                     <tr
-                      key={event.id}
                       onClick={() => setExpanded(isOpen ? null : event.id)}
                       className={cn(
                         "cursor-pointer border-b border-border/70 transition-colors hover:bg-secondary/40",
@@ -279,7 +278,7 @@ export function AuditTable({
                         </td>
                       </tr>
                     ) : null}
-                  </>
+                  </Fragment>
                 );
               })}
             </tbody>
