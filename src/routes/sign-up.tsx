@@ -1,4 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
+import { motion } from "motion/react";
 import { Activity } from "lucide-react";
 import { DISCLAIMER } from "@/components/vw/AppShell";
 import { VideoBackdrop } from "@/components/vw/VideoBackdrop";
@@ -27,64 +28,61 @@ export const Route = createFileRoute("/sign-up")({
 
 function SignUpPage() {
   return (
-    <div className="flex min-h-screen flex-col">
-      <div className="grid flex-1 lg:grid-cols-2">
-        <section className="relative isolate flex flex-col justify-between overflow-hidden border-b border-border bg-surface/70 p-8 lg:border-r lg:border-b-0 lg:p-12">
-          <VideoBackdrop variant="hero" />
-          <span className="inline-flex items-center gap-2 text-sm font-semibold text-foreground">
-            <span className="flex size-7 items-center justify-center rounded-md bg-primary/15 text-primary">
-              <Activity className="size-4" />
-            </span>
+    <div className="relative isolate flex min-h-screen flex-col items-center justify-center px-4 py-10">
+      <VideoBackdrop variant="cinematic" className="fixed" />
+
+      <motion.div
+        initial={{ opacity: 0, y: 18, filter: "blur(8px)" }}
+        animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+        transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
+        className="relative w-full max-w-[28rem] overflow-hidden rounded-2xl border border-foreground/12 bg-card/45 p-7 shadow-[0_30px_80px_-30px_rgba(0,0,0,0.85)] backdrop-blur-2xl"
+      >
+        <div className="pointer-events-none absolute inset-x-8 top-0 h-px bg-gradient-to-r from-transparent via-primary/70 to-transparent" />
+
+        <div className="flex flex-col items-center text-center">
+          <span className="flex size-11 items-center justify-center rounded-xl border border-primary/30 bg-primary/12 text-primary">
+            <Activity className="size-5" />
+          </span>
+          <span className="mt-3 text-lg font-semibold tracking-tight text-foreground">
             VITalWatch
           </span>
-          <div className="max-w-md">
-            <h1 className="text-2xl leading-tight font-semibold tracking-tight text-foreground">
-              Access is provisioned, not self-served.
-            </h1>
-            <p className="mt-3 text-sm text-muted-foreground">
-              VITalWatch carries trial oversight and safety-reporting responsibilities, so every
-              account is created by an AIIA administrator who assigns one of the seven roles. Until a
-              role claim exists on your account, the workspace shows a "no role assigned" state
-              rather than defaulting you into anyone's data.
-            </p>
-          </div>
-          <p className="mono text-[11px] text-muted-foreground">{DISCLAIMER}</p>
-        </section>
-        <section className="relative isolate flex items-center justify-center bg-background p-8">
-          <VideoBackdrop />
-          <div className="w-full max-w-sm rounded-xl border border-border bg-card p-6 shadow-2xl">
-            <h2 className="text-base font-semibold text-foreground">Request access</h2>
-            <p className="mt-1 text-xs text-muted-foreground">
-              In a Clerk-connected deployment this panel hosts Clerk's own{" "}
-              <span className="mono">&lt;SignUp /&gt;</span> widget, themed to match VITalWatch. This
-              frontend-only build has no identity provider attached, so sign-up is deferred to the
-              administrator workflow below.
-            </p>
-            <ol className="mt-4 space-y-2 text-xs text-foreground/80">
-              <li className="rounded-md border border-border bg-surface-2 px-3 py-2">
-                1. Email the AIIA CTMS administrator with your name, institutional email and the site
-                or study you work on.
-              </li>
-              <li className="rounded-md border border-border bg-surface-2 px-3 py-2">
-                2. The administrator creates the account and sets{" "}
-                <span className="mono">publicMetadata.role</span>.
-              </li>
-              <li className="rounded-md border border-border bg-surface-2 px-3 py-2">
-                3. Sign in — you land on the default screen for your role.
-              </li>
-            </ol>
-            <Link
-              to="/login"
-              className="mt-5 inline-flex w-full items-center justify-center rounded-md bg-primary px-3 py-2 text-sm font-semibold text-primary-foreground hover:opacity-90"
-            >
-              Back to sign in
-            </Link>
-          </div>
-        </section>
-      </div>
-      <footer className="border-t border-border bg-surface/60 px-4 py-3">
-        <p className="mono text-center text-[11px] text-muted-foreground">{DISCLAIMER}</p>
-      </footer>
+          <span className="mono text-[10px] tracking-[0.28em] text-muted-foreground uppercase">
+            Clinical Trial Portal
+          </span>
+        </div>
+
+        <h1 className="mt-6 text-center text-2xl font-semibold tracking-tight text-foreground">
+          Access is provisioned.
+        </h1>
+        <p className="mt-1 text-center text-xs text-muted-foreground">
+          Every account is created by an AIIA administrator who assigns one of the seven roles.
+        </p>
+
+        <ol className="mt-5 space-y-2 text-xs text-foreground/80">
+          <li className="rounded-xl border border-foreground/10 bg-foreground/[0.03] px-3 py-2.5">
+            1. Email the AIIA CTMS administrator with your name, institutional email and the site or
+            study you work on.
+          </li>
+          <li className="rounded-xl border border-foreground/10 bg-foreground/[0.03] px-3 py-2.5">
+            2. The administrator creates the account and sets{" "}
+            <span className="mono">publicMetadata.role</span>.
+          </li>
+          <li className="rounded-xl border border-foreground/10 bg-foreground/[0.03] px-3 py-2.5">
+            3. Sign in — you land on the default screen for your role.
+          </li>
+        </ol>
+
+        <Link
+          to="/login"
+          className="mt-6 inline-flex w-full items-center justify-center rounded-full bg-gradient-to-r from-success via-primary to-info px-4 py-3 text-sm font-semibold tracking-wide text-primary-foreground uppercase transition-all hover:brightness-110"
+        >
+          Back to sign in
+        </Link>
+      </motion.div>
+
+      <p className="mono mt-8 max-w-md text-center text-[11px] text-muted-foreground">
+        {DISCLAIMER}
+      </p>
     </div>
   );
 }
