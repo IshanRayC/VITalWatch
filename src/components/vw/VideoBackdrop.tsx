@@ -11,10 +11,11 @@ export function VideoBackdrop({
   variant = "ambient",
   className,
 }: {
-  variant?: "ambient" | "hero";
+  variant?: "ambient" | "hero" | "cinematic";
   className?: string;
 }) {
-  const hero = variant === "hero";
+  const scrim =
+    variant === "cinematic" ? "opacity-25" : variant === "hero" ? "opacity-40" : "opacity-60";
   return (
     <div
       aria-hidden
