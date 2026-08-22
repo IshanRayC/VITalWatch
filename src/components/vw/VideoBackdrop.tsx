@@ -1,11 +1,11 @@
 import { cn } from "@/lib/utils";
-import leaves from "@/assets/leaves-bg.mp4.asset.json";
-import poster from "@/assets/leaves-poster.jpg.asset.json";
+import video from "@/assets/bg-video.mp4.asset.json";
+import poster from "@/assets/bg-poster.jpg.asset.json";
 
 /**
- * Ambient botanical motion behind the UI. Deliberately very low contrast:
- * a scrim of the background token sits on top so every figure, label and
- * table row keeps full contrast. Decorative only — hidden from a11y tree.
+ * Full-screen looping background video. Autoplays muted, no controls,
+ * scales to cover any viewport, and is dimmed to 60% brightness.
+ * A light scrim keeps clinical data fully legible in both themes.
  */
 export function VideoBackdrop({
   variant = "ambient",
@@ -24,25 +24,22 @@ export function VideoBackdrop({
       )}
     >
       <video
-        src={leaves.url}
+        src={video.url}
         poster={poster.url}
         autoPlay
         muted
         loop
         playsInline
+        controls={false}
+        disablePictureInPicture
         preload="auto"
-        className={cn(
-          "size-full object-cover",
-          hero
-            ? "opacity-[0.5] blur-[1px] saturate-[0.9]"
-            : "opacity-[0.18] blur-[2px] saturate-[0.75]",
-        )}
+        className="absolute inset-0 size-full object-cover brightness-[0.6]"
       />
       {/* readability scrim — keeps text/data contrast intact in both themes */}
       <div
         className={cn(
           "absolute inset-0 bg-background",
-          hero ? "opacity-40" : "opacity-65",
+          hero ? "opacity-40" : "opacity-60",
         )}
       />
       <div className="absolute inset-0 bg-gradient-to-b from-background/70 via-background/30 to-background/80" />
