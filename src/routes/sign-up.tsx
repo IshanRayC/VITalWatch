@@ -1,6 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Activity } from "lucide-react";
 import { DISCLAIMER } from "@/components/vw/AppShell";
+import { VideoBackdrop } from "@/components/vw/VideoBackdrop";
 
 export const Route = createFileRoute("/sign-up")({
   head: () => ({
@@ -28,7 +29,8 @@ function SignUpPage() {
   return (
     <div className="flex min-h-screen flex-col">
       <div className="grid flex-1 lg:grid-cols-2">
-        <section className="flex flex-col justify-between border-b border-border bg-surface p-8 lg:border-r lg:border-b-0 lg:p-12">
+        <section className="relative isolate flex flex-col justify-between overflow-hidden border-b border-border bg-surface/70 p-8 lg:border-r lg:border-b-0 lg:p-12">
+          <VideoBackdrop variant="hero" />
           <span className="inline-flex items-center gap-2 text-sm font-semibold text-foreground">
             <span className="flex size-7 items-center justify-center rounded-md bg-primary/15 text-primary">
               <Activity className="size-4" />
@@ -48,7 +50,8 @@ function SignUpPage() {
           </div>
           <p className="mono text-[11px] text-muted-foreground">{DISCLAIMER}</p>
         </section>
-        <section className="flex items-center justify-center bg-background p-8">
+        <section className="relative isolate flex items-center justify-center bg-background p-8">
+          <VideoBackdrop />
           <div className="w-full max-w-sm rounded-xl border border-border bg-card p-6 shadow-2xl">
             <h2 className="text-base font-semibold text-foreground">Request access</h2>
             <p className="mt-1 text-xs text-muted-foreground">

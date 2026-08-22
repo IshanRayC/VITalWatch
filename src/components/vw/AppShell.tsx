@@ -19,6 +19,8 @@ import {
 } from "@/lib/roles";
 import { AlertBanner } from "@/components/vw/AlertBanner";
 import { RoleBadge } from "@/components/vw/RoleBadge";
+import { VideoBackdrop } from "@/components/vw/VideoBackdrop";
+
 import type { Role } from "@/types/vitalwatch";
 
 export const DISCLAIMER = "Demo system — synthetic data only. No real patient data at any stage.";
@@ -285,11 +287,13 @@ export function AppShell({
   }, [isLoaded, isSignedIn, navigate]);
 
   return (
-    <div className="flex min-h-screen flex-col">
+    <div className="relative isolate flex min-h-screen flex-col">
+      <VideoBackdrop className="fixed" />
       <SignedIn>
         <TopNav />
       </SignedIn>
       <main className="mx-auto w-full max-w-[1600px] flex-1 px-4 py-5 md:px-6">
+
         {!isLoaded ? (
           <p className="text-sm text-muted-foreground">Restoring session…</p>
         ) : !isSignedIn ? (
