@@ -7,6 +7,8 @@ import { DISCLAIMER } from "@/components/vw/AppShell";
 import { ROLE_LABEL, ROLE_LANDING, ROLE_SCOPE } from "@/lib/roles";
 import { RoleBadge } from "@/components/vw/RoleBadge";
 import { Shimmer } from "@/components/vw/Skeletons";
+import { VideoBackdrop } from "@/components/vw/VideoBackdrop";
+
 
 export const Route = createFileRoute("/login")({
   head: () => ({
