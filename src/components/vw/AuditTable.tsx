@@ -278,7 +278,7 @@ export function AuditTable({
                         </td>
                       </tr>
                     ) : null}
-                  </>
+                  </Fragment>
                 );
               })}
             </tbody>
