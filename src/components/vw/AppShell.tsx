@@ -28,7 +28,7 @@ export const DISCLAIMER = "Demo system — synthetic data only. No real patient 
 /** Present on every screen, by product requirement. */
 export function DisclaimerFooter() {
   return (
-    <footer className="border-t border-border bg-surface/60 px-4 py-3 md:px-6">
+    <footer className="border-t border-border glass-soft px-4 py-3 md:px-6">
       <p className="mono text-center text-[11px] tracking-wide text-muted-foreground">
         {DISCLAIMER}
       </p>
@@ -147,7 +147,7 @@ function AlertBell() {
               animate={reduced ? { opacity: 1 } : { x: 0 }}
               exit={reduced ? { opacity: 0 } : { x: 380 }}
               transition={{ type: "spring", stiffness: 280, damping: 30 }}
-              className="fixed top-0 right-0 z-50 flex h-full w-[min(420px,90vw)] flex-col border-l border-border bg-surface"
+              className="fixed top-0 right-0 z-50 flex h-full w-[min(420px,90vw)] flex-col border-l border-border glass-soft"
             >
               <div className="flex items-center justify-between border-b border-border px-4 py-3">
                 <div>
@@ -202,7 +202,7 @@ function TopNav() {
   const keys = effectiveRole ? NAV_BY_ROLE[effectiveRole] : [];
 
   return (
-    <header className="sticky top-0 z-40 border-b border-border bg-surface/95 backdrop-blur">
+    <header className="sticky top-0 z-40 border-b border-border glass-soft">
       <div className="mx-auto flex max-w-[1600px] items-center gap-4 px-4 py-2.5 md:px-6">
         <Link to="/portfolio" className="flex items-center gap-2">
           <span className="flex size-7 items-center justify-center rounded-md bg-primary/15 text-primary">

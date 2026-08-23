@@ -12,16 +12,16 @@ export function SignalTable({ signals }: { signals: TermSignal[] }) {
 
   if (signals.length === 0) {
     return (
-      <p className="rounded-lg border border-border bg-card px-4 py-10 text-center text-sm text-muted-foreground">
+      <p className="rounded-lg border border-border glass px-4 py-10 text-center text-sm text-muted-foreground">
         No coded adverse events yet — nothing to aggregate.
       </p>
     );
   }
 
   return (
-    <div className="overflow-hidden rounded-lg border border-border bg-card">
+    <div className="overflow-hidden rounded-lg border border-border glass">
       <table className="w-full min-w-[720px] border-collapse text-sm">
-        <thead className="border-b border-border bg-surface-2/60">
+        <thead className="border-b border-border glass-soft">
           <tr className="text-xs tracking-wide text-muted-foreground uppercase">
             <th className="px-3 py-2 text-left">Coded term</th>
             <th className="px-3 py-2 text-left">Distribution</th>

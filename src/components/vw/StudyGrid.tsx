@@ -114,7 +114,7 @@ export function StudyGrid({ rows }: { rows: StudyGridRow[] }) {
   );
 
   return (
-    <section className="rounded-lg border border-border bg-card">
+    <section className="rounded-lg border border-border glass">
       <div className="flex flex-wrap items-center justify-between gap-3 border-b border-border px-4 py-3">
         <h2 className="text-sm font-semibold text-foreground">Studies</h2>
         <div className="flex flex-wrap items-center gap-2">
@@ -154,7 +154,7 @@ export function StudyGrid({ rows }: { rows: StudyGridRow[] }) {
       ) : (
         <div className="overflow-x-auto">
           <table className="w-full min-w-[1000px] border-collapse text-sm">
-            <thead className="border-b border-border bg-surface-2/60">
+            <thead className="border-b border-border glass-soft">
               <tr>
                 {header("id", "ID")}
                 {header("title", "Title")}

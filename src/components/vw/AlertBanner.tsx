@@ -38,7 +38,7 @@ export function AlertBanner({
       animate={{ opacity: acknowledged ? 0.55 : 1, x: 0 }}
       transition={{ duration: 0.35, delay: reduced ? 0 : Math.min(index * 0.06, 0.5) }}
       className={cn(
-        "group rounded-lg border bg-card p-3 transition-colors",
+        "group rounded-lg border glass p-3 transition-colors",
         acknowledged
           ? "border-border"
           : alert.severity === "critical"
