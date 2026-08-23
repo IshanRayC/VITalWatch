@@ -147,7 +147,7 @@ function AlertBell() {
               animate={reduced ? { opacity: 1 } : { x: 0 }}
               exit={reduced ? { opacity: 0 } : { x: 380 }}
               transition={{ type: "spring", stiffness: 280, damping: 30 }}
-              className="fixed top-0 right-0 z-50 flex h-full w-[min(420px,90vw)] flex-col border-l border-border glass-soft"
+              className="fixed top-0 right-0 z-50 flex h-full w-[min(420px,90vw)] flex-col border-l border-border bg-surface/85 backdrop-blur-2xl"
             >
               <div className="flex items-center justify-between border-b border-border px-4 py-3">
                 <div>
