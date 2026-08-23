@@ -204,10 +204,8 @@ function TopNav() {
   return (
     <header className="sticky top-0 z-40 border-b border-border glass-soft">
       <div className="mx-auto flex max-w-[1600px] items-center gap-4 px-4 py-2.5 md:px-6">
-        <Link to="/portfolio" className="flex items-center gap-2">
-          <span className="flex size-7 items-center justify-center rounded-md bg-primary/15 text-primary">
-            <Activity className="size-4" />
-          </span>
+        <Link to="/" className="flex items-center gap-2">
+          <img src={markAsset.url} alt="VITalWatch logo" className="size-7 object-contain" />
           <span className="text-sm font-semibold tracking-tight text-foreground">
             VITalWatch
           </span>
