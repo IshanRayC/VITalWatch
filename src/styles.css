@@ -178,14 +178,14 @@
 
 /* Frosted panel surface used by every card/table/section block. */
 @utility glass {
-  background-color: color-mix(in oklab, var(--color-card) 55%, transparent);
-  backdrop-filter: blur(18px) saturate(140%);
-  border-color: color-mix(in oklab, var(--color-foreground) 12%, transparent);
+  background-color: color-mix(in oklab, var(--color-card) 32%, transparent);
+  backdrop-filter: blur(10px) saturate(125%);
+  border-color: color-mix(in oklab, var(--color-foreground) 14%, transparent);
 }
 
 @utility glass-soft {
-  background-color: color-mix(in oklab, var(--color-surface) 45%, transparent);
-  backdrop-filter: blur(14px) saturate(135%);
+  background-color: color-mix(in oklab, var(--color-surface) 22%, transparent);
+  backdrop-filter: blur(8px) saturate(120%);
 }
 
 
