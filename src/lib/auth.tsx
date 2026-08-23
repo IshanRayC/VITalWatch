@@ -205,7 +205,7 @@ export function UserButton() {
           />
           <div
             role="menu"
-            className="absolute right-0 z-50 mt-2 w-64 rounded-lg border border-border bg-popover p-3 shadow-xl"
+            className="absolute right-0 z-50 mt-2 w-64 rounded-lg border border-border bg-popover/70 p-3 shadow-xl backdrop-blur-xl"
           >
             <p className="text-sm font-medium text-foreground">{user.fullName}</p>
             <p className="mono mt-0.5 text-xs text-muted-foreground">

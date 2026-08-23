@@ -260,7 +260,7 @@ function IntakeForm({
         />
       </label>
 
-      <div className="mt-2 rounded-md border border-dashed border-border p-3">
+      <div className="mt-2 rounded-md border border-dashed border-border glass p-3">
         <div className="flex items-center gap-2 text-xs text-muted-foreground">
           {coding ? (
             <Loader2 className="size-3.5 animate-spin" />
@@ -507,7 +507,7 @@ function PharmacovigilancePage() {
       title="Pharmacovigilance"
       description="Adverse event intake, assisted coding, reporting deadlines and DSMB term signals."
       actions={
-        <div className="flex items-center gap-1 rounded-md border border-border p-0.5">
+        <div className="flex items-center gap-1 rounded-md border border-border glass p-0.5">
           {(["intake", "signals"] as const).map((key) => (
             <button
               key={key}
