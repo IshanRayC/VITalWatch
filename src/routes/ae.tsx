@@ -201,7 +201,7 @@ function IntakeForm({
   }
 
   return (
-    <section className="rounded-lg border border-border bg-card p-4">
+    <section className="rounded-lg border border-border glass p-4">
       <h2 className="text-sm font-semibold text-foreground">Report an adverse event</h2>
       <p className="mt-0.5 text-xs text-muted-foreground">
         Subjects are pseudonymous — use the subject code only, never a name.
@@ -413,9 +413,9 @@ function AeTable({ events }: { events: AdverseEvent[] }) {
     );
   }
   return (
-    <div className="overflow-x-auto rounded-lg border border-border bg-card">
+    <div className="overflow-x-auto rounded-lg border border-border glass">
       <table className="w-full min-w-[1040px] border-collapse text-sm">
-        <thead className="border-b border-border bg-surface-2/60">
+        <thead className="border-b border-border glass-soft">
           <tr className="text-xs tracking-wide text-muted-foreground uppercase">
             <th className="px-3 py-2 text-left">Study</th>
             <th className="px-3 py-2 text-left">Subject</th>
@@ -547,7 +547,7 @@ function PharmacovigilancePage() {
                 initial={reduced ? { opacity: 1 } : { opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0 }}
-                className="rounded-lg border border-critical/40 bg-card p-4"
+                className="rounded-lg border border-critical/40 glass p-4"
               >
                 <div className="flex flex-wrap items-center justify-between gap-2">
                   <h2 className="text-sm font-semibold text-foreground">

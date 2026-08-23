@@ -135,7 +135,7 @@ function StudyPage() {
       ) : studyQuery.isError || !study ? (
         <ErrorState message="This study could not be loaded." onRetry={() => studyQuery.refetch()} />
       ) : (
-        <section className="rounded-lg border border-border bg-card p-4">
+        <section className="rounded-lg border border-border glass p-4">
           <div className="flex flex-wrap items-center gap-x-6 gap-y-2">
             <div>
               <p className="text-[11px] tracking-wide text-muted-foreground uppercase">Study</p>
@@ -219,7 +219,7 @@ function StudyPage() {
       </div>
 
       <div className="mt-4 grid gap-4 xl:grid-cols-[minmax(0,1fr)_380px]">
-        <section className="rounded-lg border border-border bg-card p-4">
+        <section className="rounded-lg border border-border glass p-4">
           <h2 className="mb-2 text-sm font-semibold text-foreground">
             Enrolment vs plan <span className="text-muted-foreground">· actual, expected, target</span>
           </h2>
@@ -235,7 +235,7 @@ function StudyPage() {
           )}
         </section>
 
-        <section className="rounded-lg border border-border bg-card p-4">
+        <section className="rounded-lg border border-border glass p-4">
           <h2 className="mb-3 text-sm font-semibold text-foreground">Milestones</h2>
           {milestonesQuery.isPending ? (
             <PanelSkeleton height="h-64" />
@@ -259,9 +259,9 @@ function StudyPage() {
         ) : sitesQuery.data.length === 0 ? (
           <EmptyState title="No sites attached" hint="This study has no participating sites yet." />
         ) : (
-          <div className="overflow-x-auto rounded-lg border border-border bg-card">
+          <div className="overflow-x-auto rounded-lg border border-border glass">
             <table className="w-full min-w-[760px] border-collapse text-sm">
-              <thead className="border-b border-border bg-surface-2/60">
+              <thead className="border-b border-border glass-soft">
                 <tr className="text-xs tracking-wide text-muted-foreground uppercase">
                   <th className="px-3 py-2 text-left">Site</th>
                   <th className="px-3 py-2 text-left">City / state</th>
@@ -298,7 +298,7 @@ function StudyPage() {
       </section>
 
       <div className="mt-4 grid gap-4 lg:grid-cols-2">
-        <section className="rounded-lg border border-border bg-card p-4">
+        <section className="rounded-lg border border-border glass p-4">
           <h2 className="mb-3 text-sm font-semibold text-foreground">
             Protocol deviations{" "}
             <span className="mono text-xs text-muted-foreground">
@@ -334,7 +334,7 @@ function StudyPage() {
           )}
         </section>
 
-        <section className="rounded-lg border border-border bg-card p-4">
+        <section className="rounded-lg border border-border glass p-4">
           <h2 className="mb-3 text-sm font-semibold text-foreground">
             Open data queries{" "}
             <span className="mono text-xs text-muted-foreground">· {openQueries.length}</span>

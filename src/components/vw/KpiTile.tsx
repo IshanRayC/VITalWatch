@@ -74,7 +74,7 @@ export function KpiTile({
         if (onClick && (e.key === "Enter" || e.key === " ")) onClick();
       }}
       className={cn(
-        "relative overflow-hidden rounded-lg border bg-card p-4",
+        "relative overflow-hidden rounded-lg border glass p-4",
         attention ? "border-warning/40" : "border-border",
         onClick && "cursor-pointer transition-colors hover:border-primary/50",
       )}

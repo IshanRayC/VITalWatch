@@ -57,7 +57,7 @@ function DiffViewer({
   }
 
   const render = (obj: Record<string, unknown> | null, side: "before" | "after") => (
-    <div className="rounded-md border border-border bg-surface-2/60 p-3">
+    <div className="rounded-md border border-border glass-soft p-3">
       <p className="mb-2 text-[11px] font-semibold tracking-wide text-muted-foreground uppercase">
         {side}
       </p>
@@ -145,7 +145,7 @@ export function AuditTable({
   }, [verifying, ordered, verify, reduced]);
 
   return (
-    <section className="rounded-lg border border-border bg-card">
+    <section className="rounded-lg border border-border glass">
       <div className="flex flex-wrap items-center justify-between gap-3 border-b border-border px-4 py-3">
         <div>
           <h2 className="text-sm font-semibold text-foreground">Audit trail</h2>
@@ -204,7 +204,7 @@ export function AuditTable({
       ) : (
         <div className="overflow-x-auto">
           <table className="w-full min-w-[1040px] border-collapse text-sm">
-            <thead className="border-b border-border bg-surface-2/60">
+            <thead className="border-b border-border glass-soft">
               <tr className="text-xs tracking-wide text-muted-foreground uppercase">
                 <th className="w-10 px-3 py-2" />
                 <th className="px-3 py-2 text-left">Seq</th>

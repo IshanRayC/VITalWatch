@@ -8,7 +8,7 @@ export function KpiSkeletonRow({ count = 6 }: { count?: number }) {
   return (
     <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6">
       {Array.from({ length: count }).map((_, i) => (
-        <div key={i} className="rounded-lg border border-border bg-card p-4">
+        <div key={i} className="rounded-lg border border-border glass p-4">
           <Shimmer className="h-3 w-24" />
           <Shimmer className="mt-3 h-8 w-20" />
           <Shimmer className="mt-3 h-3 w-16" />
@@ -20,7 +20,7 @@ export function KpiSkeletonRow({ count = 6 }: { count?: number }) {
 
 export function TableSkeleton({ rows = 6, label }: { rows?: number; label?: string }) {
   return (
-    <div className="rounded-lg border border-border bg-card p-4">
+    <div className="rounded-lg border border-border glass p-4">
       {label ? <Shimmer className="mb-4 h-3 w-32" /> : null}
       <div className="space-y-2">
         {Array.from({ length: rows }).map((_, i) => (
@@ -33,7 +33,7 @@ export function TableSkeleton({ rows = 6, label }: { rows?: number; label?: stri
 
 export function PanelSkeleton({ height = "h-60" }: { height?: string }) {
   return (
-    <div className="rounded-lg border border-border bg-card p-4">
+    <div className="rounded-lg border border-border glass p-4">
       <Shimmer className="mb-3 h-3 w-28" />
       <Shimmer className={cn("w-full", height)} />
     </div>
@@ -48,7 +48,7 @@ export function EmptyState({
   hint?: string;
 }) {
   return (
-    <div className="rounded-lg border border-dashed border-border bg-card px-4 py-12 text-center">
+    <div className="rounded-lg border border-dashed border-border glass px-4 py-12 text-center">
       <p className="text-sm font-medium text-foreground">{title}</p>
       {hint ? <p className="mt-1 text-xs text-muted-foreground">{hint}</p> : null}
     </div>
