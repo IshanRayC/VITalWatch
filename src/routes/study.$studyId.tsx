@@ -317,7 +317,7 @@ function StudyPage() {
           ) : (
             <ul className="space-y-2">
               {deviationsQuery.data.slice(0, 6).map((d) => (
-                <li key={d.id} className="rounded-md border border-border p-2.5">
+                <li key={d.id} className="rounded-md border border-border glass p-2.5">
                   <div className="flex flex-wrap items-center gap-2">
                     <span className="mono text-[11px] text-muted-foreground">{d.id}</span>
                     <DeviationSeverityBadge severity={d.severity} />
@@ -348,7 +348,7 @@ function StudyPage() {
           ) : (
             <ul className="space-y-2">
               {openQueries.slice(0, 6).map((q) => (
-                <li key={q.id} className="flex items-start gap-3 rounded-md border border-border p-2.5">
+                <li key={q.id} className="flex items-start gap-3 rounded-md border border-border glass p-2.5">
                   <span
                     className={cn(
                       "mono rounded-md border px-2 py-1 text-xs font-semibold",
