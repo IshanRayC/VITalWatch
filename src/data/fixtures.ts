@@ -102,6 +102,15 @@ export function digest(input: string): string {
 
 export const users: User[] = [
   {
+    id: "U-000",
+    email: "lead@aiia.demo",
+    full_name: "Ishan Ray Chaudhuri",
+    role: "admin",
+    study_ids: [],
+    site_ids: [],
+    active: true,
+  },
+  {
     id: "U-001",
     email: "r.menon@aiia.demo",
     full_name: "Dr. Radhika Menon",
