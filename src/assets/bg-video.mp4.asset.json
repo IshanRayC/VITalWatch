@@ -1,11 +1,11 @@
 {
-  "version": 1,
   "asset_id": "2c65c7d0-fb23-4c10-bc78-33b1fed1506c",
-  "project_id": "82eadcc9-af53-4370-820a-c6b2e0cd732f",
-  "url": "/__l5e/assets-v1/2c65c7d0-fb23-4c10-bc78-33b1fed1506c/bg-video.mp4",
-  "r2_key": "a/v1/82eadcc9-af53-4370-820a-c6b2e0cd732f/2c65c7d0-fb23-4c10-bc78-33b1fed1506c/bg-video.mp4",
-  "original_filename": "bg-video.mp4",
-  "size": 456982,
   "content_type": "video/mp4",
-  "created_at": "2026-08-22T19:17:57Z"
+  "created_at": "2026-08-22T19:17:57Z",
+  "original_filename": "bg-video.mp4",
+  "project_id": "95de7589-3221-4b2f-ada3-71366a00f084",
+  "r2_key": "a/v1/95de7589-3221-4b2f-ada3-71366a00f084/2c65c7d0-fb23-4c10-bc78-33b1fed1506c/bg-video.mp4",
+  "size": 456982,
+  "url": "/__l5e/assets-v1/2c65c7d0-fb23-4c10-bc78-33b1fed1506c/bg-video.mp4",
+  "version": 1
 }

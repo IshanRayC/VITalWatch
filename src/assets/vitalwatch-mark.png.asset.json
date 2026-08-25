@@ -1,11 +1,11 @@
 {
-  "version": 1,
   "asset_id": "d000f87e-094b-4158-bf72-58f851d07136",
-  "project_id": "82eadcc9-af53-4370-820a-c6b2e0cd732f",
-  "url": "/__l5e/assets-v1/d000f87e-094b-4158-bf72-58f851d07136/vitalwatch-mark.png",
-  "r2_key": "a/v1/82eadcc9-af53-4370-820a-c6b2e0cd732f/d000f87e-094b-4158-bf72-58f851d07136/vitalwatch-mark.png",
-  "original_filename": "vitalwatch-mark.png",
-  "size": 267153,
   "content_type": "image/png",
-  "created_at": "2026-08-23T04:21:46Z"
+  "created_at": "2026-08-23T04:21:46Z",
+  "original_filename": "vitalwatch-mark.png",
+  "project_id": "95de7589-3221-4b2f-ada3-71366a00f084",
+  "r2_key": "a/v1/95de7589-3221-4b2f-ada3-71366a00f084/d000f87e-094b-4158-bf72-58f851d07136/vitalwatch-mark.png",
+  "size": 267153,
+  "url": "/__l5e/assets-v1/d000f87e-094b-4158-bf72-58f851d07136/vitalwatch-mark.png",
+  "version": 1
 }
