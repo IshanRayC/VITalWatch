@@ -1,8 +1,8 @@
 # Vital Clinical Hub
 
-## Your role
+## My role
 
-You are a senior frontend engineer and product designer. Build the **complete, production-quality
+I am a frontend engineer and product designer. Build the **complete, production-quality
 frontend** for **VITalWatch** — a real-time Clinical Trial Management System (CTMS) with an
 integrated Pharmacovigilance (PV) module, built for the All India Institute of Ayurveda (AIIA),
 which also hosts India's National Pharmacovigilance Coordination Centre (NPvCC).
