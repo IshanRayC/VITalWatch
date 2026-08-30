@@ -7,8 +7,7 @@ _Smart India Hackathon 2024 — Problem Statement 46_
 _All India Institute of Ayurveda (AIIA) · National Pharmacovigilance Coordination Centre (NPvCC)_
 
 [![IshanRayC](https://img.shields.io/badge/IshanRayC-ff4d4d?style=for-the-badge&logo=github&logoColor=black)](https://github.com/IshanRayC)
-[![Deploy Status](https://img.shields.io/github/actions/workflow/status/CalebEJ-3510/VITalWatch-Prototype/deploy.yml?style=for-the-badge&label=Deploy&logo=github-actions)](https://github.com/CalebEJ-3510/VITalWatch-Prototype/actions)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](LICENSE)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)]
 
 
 
