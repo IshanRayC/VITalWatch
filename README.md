@@ -1,6 +1,3 @@
-<div align="center">
-
-<img src="public/vitalwatch-logo.png" alt="VITalWatch Logo" width="120" />
 
 # VITalWatch
 
@@ -26,13 +23,6 @@ _All India Institute of Ayurveda (AIIA) · National Pharmacovigilance Coordinati
 ---
 
 > **⚠️ Demo System — Synthetic data only.** No real patient data is used or stored at any stage of this application.
-
----
-
-## 🔗 Live Site
-
-
-Sign in with any demo account on the login page — no credentials required. Select a role and explore the full system.
 
 ---
 
