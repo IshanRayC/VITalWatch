@@ -3,7 +3,6 @@ import { Link, useNavigate, useRouterState } from "@tanstack/react-router";
 import { useQuery } from "@tanstack/react-query";
 import { AnimatePresence, motion, useReducedMotion } from "motion/react";
 import { Bell, Moon, ShieldOff, Sun, X } from "lucide-react";
-import markAsset from "@/assets/vitalwatch-mark.png.asset.json";
 import { cn } from "@/lib/utils";
 import { listAlerts } from "@/lib/api";
 import { STUB_MODE } from "@/lib/api";
@@ -206,7 +205,7 @@ function TopNav() {
     <header className="sticky top-0 z-40 border-b border-border glass-soft">
       <div className="mx-auto flex max-w-[1600px] items-center gap-4 px-4 py-2.5 md:px-6">
         <Link to="/" className="flex items-center gap-2">
-          <img src={markAsset.url} alt="VITalWatch logo" className="size-7 object-contain" />
+          <img src={"/vitalwatch-mark.svg"} alt="VITalWatch logo" className="size-7 object-contain" />
           <span className="text-sm font-semibold tracking-tight text-foreground">
             VITalWatch
           </span>
