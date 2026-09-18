@@ -156,15 +156,6 @@ export const users: User[] = [
     active: true,
   },
   {
-    id: "U-006",
-    email: "admin@aiia.demo",
-    full_name: "Caleb Elisha Joseph",
-    role: "admin",
-    study_ids: [],
-    site_ids: [],
-    active: true,
-  },
-  {
     id: "U-007",
     email: "inspector@cdsco.demo",
     full_name: "CDSCO Inspector (read-only)",
@@ -886,7 +877,6 @@ const AUDIT_SEEDS: Array<{
   after: Record<string, unknown> | null;
   reason: string | null;
 }> = [
-  { actor: "U-006", role: "admin", action: "login", resource_type: "session", resource_id: "SESS-1001", before: null, after: { method: "clerk", mfa: true }, reason: null },
   { actor: "U-002", role: "study_coordinator", action: "create", resource_type: "subject", resource_id: "SUBJ-001-341", before: null, after: { subject_code: "SUBJ-001-341", status: "screened" }, reason: null },
   { actor: "U-002", role: "study_coordinator", action: "update", resource_type: "subject", resource_id: "SUBJ-001-341", before: { status: "screened", arm: null }, after: { status: "enrolled", arm: "A" }, reason: "Eligibility confirmed at visit 1" },
   { actor: "U-005", role: "pharmacovigilance", action: "create", resource_type: "adverse_event", resource_id: "AE-0001", before: null, after: { serious: true, severity: "severe", coded_term: "Drug-induced liver injury" }, reason: null },
