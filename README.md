@@ -228,19 +228,6 @@ On the login page, pick any persona from the list:
 
 ---
 
-## 👥 Team
-
-Built for **Smart India Hackathon 2024** by:
-
-| Member | GitHub |
-| --- | --- |
-| **Ishan Ray Chaudhuri (LEAD)** | [@IshanRayC](https://github.com/IshanRayC) |
-| **Roxy** | [GitHub Username](https://github.com/USERNAME) |
-| **Sreeja Kotra Reddy** | [GitHub Username](https://github.com/USERNAME) |
-| **Kavin K** | [GitHub Username](https://github.com/USERNAME) |
-| **Rakshitha S** | [GitHub Username](https://github.com/USERNAME) |
-
----
 
 ## 📄 License
 
