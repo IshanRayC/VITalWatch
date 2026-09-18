@@ -361,7 +361,7 @@ For the current registration request, see [PR #52994](https://github.com/is-a-de
 
 ## 📄 License
 
-This project is released under the **MIT License**. See [`LICENSE`](LICENSE) for details.
+No license file is currently included in this repository. Add an explicit `LICENSE` file before distributing or reusing the project under specific open-source terms.
 
 <div align="center">
 
