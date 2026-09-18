@@ -1,11 +1,8 @@
 import { cn } from "@/lib/utils";
-import video from "@/assets/bg-video.mp4.asset.json";
-import poster from "@/assets/bg-poster.jpg.asset.json";
 
 /**
- * Full-screen looping background video. Autoplays muted, no controls,
- * scales to cover any viewport, and is dimmed to 60% brightness.
- * A light scrim keeps clinical data fully legible in both themes.
+ * Full-screen ambient backdrop with no external media dependency.
+ * Uses CSS gradients so the demo remains self-contained on any host.
  */
 export function VideoBackdrop({
   variant = "ambient",
@@ -14,8 +11,13 @@ export function VideoBackdrop({
   variant?: "ambient" | "hero" | "cinematic";
   className?: string;
 }) {
-  const scrim =
-    variant === "cinematic" ? "opacity-25" : variant === "hero" ? "opacity-40" : "opacity-60";
+  const glow =
+    variant === "cinematic"
+      ? "opacity-80"
+      : variant === "hero"
+        ? "opacity-65"
+        : "opacity-55";
+
   return (
     <div
       aria-hidden
@@ -24,28 +26,14 @@ export function VideoBackdrop({
         className,
       )}
     >
-      <video
-        src={video.url}
-        poster={poster.url}
-        autoPlay
-        muted
-        loop
-        playsInline
-        controls={false}
-        disablePictureInPicture
-        preload="auto"
-        className="absolute inset-0 size-full object-cover brightness-[0.6]"
-      />
-      {/* readability scrim — keeps text/data contrast intact in both themes */}
-      <div className={cn("absolute inset-0 bg-background", scrim)} />
       <div
         className={cn(
-          "absolute inset-0",
-          variant === "cinematic"
-            ? "bg-gradient-to-br from-background/60 via-background/10 to-background/70"
-            : "bg-gradient-to-b from-background/70 via-background/30 to-background/80",
+          "absolute -inset-[20%] bg-[radial-gradient(circle_at_18%_18%,color-mix(in_oklab,var(--color-primary)_34%,transparent),transparent_34%),radial-gradient(circle_at_82%_28%,color-mix(in_oklab,var(--color-info)_22%,transparent),transparent_32%),radial-gradient(circle_at_55%_82%,color-mix(in_oklab,var(--color-success)_18%,transparent),transparent_36%)] blur-3xl",
+          glow,
         )}
       />
+      <div className="absolute inset-0 bg-[linear-gradient(135deg,color-mix(in_oklab,var(--color-background)_72%,transparent),transparent_48%,color-mix(in_oklab,var(--color-background)_88%,transparent))]" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_28%,color-mix(in_oklab,var(--color-background)_78%,transparent)_100%)]" />
     </div>
   );
 }
