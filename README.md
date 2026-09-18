@@ -88,7 +88,7 @@ The system covers the full trial lifecycle: from EC approval and CTRI registrati
 ### 🌙 UX & Design
 
 - Dark mode by default with one-click light mode toggle (persisted in `localStorage`)
-- Glassmorphism design with animated video backdrop on all auth pages and the portfolio shell
+- Glassmorphism design with self-contained ambient CSS backdrop on all auth pages and the portfolio shell
 - Smooth page transitions and micro-animations (Motion)
 - Skeleton loaders on every async section — no layout shift
 - Responsive: mobile → 4K widescreen
@@ -113,7 +113,7 @@ src/
 │
 ├── components/vw/           # Domain UI components
 │   ├── AppShell.tsx         # Top nav, alert bell, role switcher, theme toggle
-│   ├── VideoBackdrop.tsx    # Background video (ambient / hero / cinematic)
+│   ├── VideoBackdrop.tsx    # Self-contained CSS backdrop (ambient / hero / cinematic)
 │   ├── KpiTile.tsx          # Animated KPI metric cards
 │   ├── AlertBanner.tsx      # Per-alert card + acknowledge button
 │   ├── EnrolmentChart.tsx   # Recharts enrolment vs plan curve
@@ -165,7 +165,7 @@ All API calls are centralized in `lib/api.ts`. No component ever calls `fetch` d
 | Animation     | Motion v13 (formerly Framer Motion) |
 | Charts        | Recharts v2                         |
 | Icons         | Lucide React                        |
-| Deployment    | GitHub Pages via GitHub Actions     |
+| Deployment    | Vercel via Nitro                    |
 
 ---
 
@@ -175,8 +175,8 @@ All API calls are centralized in `lib/api.ts`. No component ever calls `fetch` d
 
 ```bash
 # 1. Clone the repo
-git clone https://github.com/IshanRayC/VITalWatch-Prototype.git
-cd VITalWatch-Prototype
+git clone https://github.com/IshanRayC/VITalWatch.git
+cd VITalWatch
 
 # 2. Install dependencies
 npm install
@@ -195,20 +195,18 @@ npm run build
 npm run preview
 ```
 
----
+---## 📦 Deployment
 
-## 📦 Deploying Your Own Fork
+VITalWatch is configured for deployment on **Vercel** using TanStack Start + Nitro.
 
-The repo ships a ready-to-use GitHub Actions workflow at [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml).
+1. Import this GitHub repository into Vercel.
+2. Keep the project root as the repository root.
+3. Let Vercel auto-detect **TanStack Start**.
+4. Deploy.
 
-1. Fork this repository
-2. Go to **Settings → Pages → Build and deployment → Source → GitHub Actions**
-3. Push any commit to `main` — the workflow fires automatically
-4. Your site will be live at `https://<your-username>.github.io/VITalWatch-Prototype/`
+The app runs in stub mode by default (`VITE_STUB_MODE=true`), so the demo works without a backend.
 
-The workflow builds with `VITE_STUB_MODE=true` so it works out of the box — no backend required.
 
----
 
 ## 🎭 Demo Accounts
 
