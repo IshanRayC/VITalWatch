@@ -5,7 +5,6 @@ import { useSession } from "@/lib/auth";
 import { ROLE_LANDING } from "@/lib/roles";
 import { DISCLAIMER } from "@/components/vw/AppShell";
 import { VideoBackdrop } from "@/components/vw/VideoBackdrop";
-import markAsset from "@/assets/vitalwatch-mark.png.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -93,7 +92,7 @@ function Index() {
       <header className="sticky top-0 z-40 border-b border-border/60 glass-soft">
         <div className="mx-auto flex max-w-[1200px] items-center gap-4 px-5 py-3">
           <Link to="/" className="flex items-center gap-2">
-            <img src={markAsset.url} alt="VITalWatch logo" className="size-7 object-contain" />
+            <img src={"/vitalwatch-mark.svg"} alt="VITalWatch logo" className="size-7 object-contain" />
             <span className="text-sm font-semibold tracking-tight">VITalWatch</span>
           </Link>
           <nav className="mono ml-auto hidden items-center gap-6 text-[11px] tracking-[0.16em] text-muted-foreground uppercase md:flex">
@@ -174,7 +173,7 @@ function Index() {
               <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_25%,color-mix(in_oklab,var(--color-primary)_28%,transparent),transparent_65%)]" />
               <div className="relative flex h-full flex-col justify-end gap-2 p-6">
                 <img
-                  src={markAsset.url}
+                  src={"/vitalwatch-mark.svg"}
                   alt="VITalWatch shield mark"
                   className="mb-auto size-24 object-contain opacity-90"
                 />
@@ -297,7 +296,7 @@ function Index() {
 
       <footer className="border-t border-border/60 glass-soft">
         <div className="mx-auto flex max-w-[1200px] flex-col items-center gap-2 px-5 py-6">
-          <img src={markAsset.url} alt="" className="size-6 object-contain opacity-80" />
+          <img src={"/vitalwatch-mark.svg"} alt="" className="size-6 object-contain opacity-80" />
           <p className="mono text-center text-[11px] tracking-wide text-muted-foreground">
             {DISCLAIMER}
           </p>
