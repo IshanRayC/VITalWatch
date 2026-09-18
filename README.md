@@ -175,7 +175,7 @@ All API calls are centralized in `lib/api.ts`. No component ever calls `fetch` d
 
 ```bash
 # 1. Clone the repo
-git clone https://github.com/CalebEJ-3510/VITalWatch-Prototype.git
+git clone https://github.com/IshanRayC/VITalWatch-Prototype.git
 cd VITalWatch-Prototype
 
 # 2. Install dependencies
@@ -235,7 +235,6 @@ Built for **Smart India Hackathon 2024** by:
 | Member | GitHub |
 | --- | --- |
 | **Ishan Ray Chaudhuri (LEAD)** | [@IshanRayC](https://github.com/IshanRayC) |
-| **Caleb Elisha Joseph** | [GitHub Username](https://github.com/USERNAME) |
 | **Roxy** | [GitHub Username](https://github.com/USERNAME) |
 | **Sreeja Kotra Reddy** | [GitHub Username](https://github.com/USERNAME) |
 | **Kavin K** | [GitHub Username](https://github.com/USERNAME) |
@@ -250,5 +249,5 @@ MIT — see [LICENSE](LICENSE)
 ---
 
 <div align="center">
-  <sub>Built with ❤️ for Smart India Hackathon · <a href="https://calebej-3510.github.io/VITalWatch-Prototype/">calebej-3510.github.io/VITalWatch-Prototype</a></sub>
+  <sub>Built with ❤️ for Smart India Hackathon</sub>
 </div>
