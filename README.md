@@ -346,29 +346,15 @@ No separate backend is required for the current synthetic-data demo.
 
 ---
 
-## 👤 AUTHOR // ISHAN RAY CHAUDHURI
+## 👤 AUTHOR
 
 <div align="center">
 
+### Ishan Ray Chaudhuri
+
 <a href="https://github.com/IshanRayC">
-  <img src="https://img.shields.io/badge/GITHUB-ISHANRAYC-0B1118?style=for-the-badge&logo=github&logoColor=22D3EE" alt="GitHub" />
+  <img src="https://img.shields.io/badge/GITHUB-ISHANRAYC-0B1118?style=for-the-badge&logo=github&logoColor=22D3EE" alt="GitHub - IshanRayC" />
 </a>
-<a href="https://www.linkedin.com/in/ishan-ray-chaudhuri/">
-  <img src="https://img.shields.io/badge/LINKEDIN-06B6D4?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
-</a>
-<a href="https://leetcode.com/u/IshanRayC">
-  <img src="https://img.shields.io/badge/LEETCODE-22D3EE?style=for-the-badge&logo=leetcode&logoColor=0B1118" alt="LeetCode" />
-</a>
-<a href="https://codeforces.com/profile/IshanRayC">
-  <img src="https://img.shields.io/badge/CODEFORCES-0EA5E9?style=for-the-badge&logo=codeforces&logoColor=white" alt="Codeforces" />
-</a>
-<a href="https://www.kaggle.com/ishanrayc">
-  <img src="https://img.shields.io/badge/KAGGLE-0891B2?style=for-the-badge&logo=kaggle&logoColor=white" alt="Kaggle" />
-</a>
-
-<br/><br/>
-
-<sub>Computer Science · Software Engineering · AI/ML · Data Science</sub>
 
 </div>
 
