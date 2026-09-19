@@ -1,357 +1,372 @@
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/IshanRayC/VITalWatch/main/public/favicon.png" alt="VITalWatch logo" width="110" />
+<img src="https://raw.githubusercontent.com/IshanRayC/VITalWatch/main/public/favicon.png" alt="VITalWatch logo" width="118" />
 
 # VITalWatch
 
-### Clinical Trial Management & Pharmacovigilance
-
-A polished frontend prototype for clinical-trial oversight, safety monitoring, alerts, and auditability — built around **synthetic demo data only**.
+### 🧬 Clinical Trial Management × Pharmacovigilance
 
 <p>
-  <a href="https://vital-watch-kv6h1b28i-ishanrayc.vercel.app/"><strong>🌐 Live Demo</strong></a>
-  ·
-  <a href="https://github.com/IshanRayC/VITalWatch"><strong>💻 Source Code</strong></a>
-  ·
-  <a href="https://vitalwatch.is-a.dev"><strong>🔗 Custom Domain</strong></a>
+  <strong>A modern frontend prototype for clinical-trial oversight, safety monitoring, alerts, and auditability.</strong><br/>
+  Built as a unified experience around synthetic clinical data and role-aware workflows.
 </p>
 
-<p>
-  <a href="https://github.com/IshanRayC">
-    <img src="https://img.shields.io/badge/GitHub-IshanRayC-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub - IshanRayC" />
-  </a>
-  <a href="https://vercel.com/">
-    <img src="https://img.shields.io/badge/Deployed%20on-Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="Deployed on Vercel" />
-  </a>
-  <a href="https://react.dev/">
-    <img src="https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react&logoColor=111827" alt="React 19" />
-  </a>
-  <a href="https://www.typescriptlang.org/">
-    <img src="https://img.shields.io/badge/TypeScript-5-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript 5" />
-  </a>
-</p>
+<br/>
 
-<p>
-  <a href="https://vite.dev/">
-    <img src="https://img.shields.io/badge/Vite-8-646CFF?style=flat-square&logo=vite&logoColor=white" alt="Vite 8" />
-  </a>
-  <a href="https://tanstack.com/router">
-    <img src="https://img.shields.io/badge/TanStack%20Router-v1-FF4154?style=flat-square" alt="TanStack Router v1" />
-  </a>
-  <a href="https://tanstack.com/query">
-    <img src="https://img.shields.io/badge/TanStack%20Query-v5-FF4154?style=flat-square" alt="TanStack Query v5" />
-  </a>
-  <a href="https://tailwindcss.com/">
-    <img src="https://img.shields.io/badge/Tailwind%20CSS-v4-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white" alt="Tailwind CSS v4" />
-  </a>
-  <img src="https://img.shields.io/github/last-commit/IshanRayC/VITalWatch?style=flat-square&logo=github" alt="Last commit" />
-</p>
+<a href="https://vital-watch-sand.vercel.app/">
+  <img src="https://img.shields.io/badge/%E2%96%B6%20LIVE%20DEMO-22D3EE?style=for-the-badge&logo=vercel&logoColor=0B1118" alt="Live Demo" />
+</a>
+<a href="https://github.com/IshanRayC/VITalWatch">
+  <img src="https://img.shields.io/badge/%E2%96%A0%20SOURCE-0B1118?style=for-the-badge&logo=github&logoColor=22D3EE" alt="Source Code" />
+</a>
+<a href="https://github.com/IshanRayC">
+  <img src="https://img.shields.io/badge/%E2%9C%A6%20AUTHOR-IshanRayC-0EA5E9?style=for-the-badge&logo=github&logoColor=white" alt="Author GitHub" />
+</a>
+
+<br/><br/>
+
+<img src="https://img.shields.io/badge/REACT-19-22D3EE?style=flat-square&logo=react&logoColor=0B1118" alt="React 19" />
+<img src="https://img.shields.io/badge/TYPESCRIPT-5-38BDF8?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript 5" />
+<img src="https://img.shields.io/badge/VITE-8-6366F1?style=flat-square&logo=vite&logoColor=white" alt="Vite 8" />
+<img src="https://img.shields.io/badge/TANSTACK-ROUTER%20%2B%20QUERY-0EA5E9?style=flat-square" alt="TanStack Router and Query" />
+<img src="https://img.shields.io/badge/TAILWIND-v4-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white" alt="Tailwind CSS v4" />
+<img src="https://img.shields.io/github/last-commit/IshanRayC/VITalWatch?style=flat-square&logo=github&label=LAST%20COMMIT" alt="Last commit" />
 
 </div>
 
 ---
 
 > [!WARNING]
-> **Demo system — synthetic data only.** VITalWatch is a software prototype and is **not intended for real clinical use**. No real patient data is used or stored by this demo.
+> **DEMO SYSTEM • SYNTHETIC DATA ONLY**
+>
+> VITalWatch is a software prototype and is **not intended for real clinical use**. It does not use or store real patient information.
 
-## 📌 Project Purpose
+## ⚡ PROJECT // VITALWATCH
 
-**VITalWatch** was built as a software engineering prototype for **Smart India Hackathon 2024 — Problem Statement 46**, focused on a unified **Clinical Trial Management System (CTMS)** and **Pharmacovigilance (PV)** experience for AIIA / NPvCC workflows.
+VITalWatch was developed as a frontend-first prototype for **Smart India Hackathon 2024 — Problem Statement 46**, exploring a unified **Clinical Trial Management System (CTMS)** and **Pharmacovigilance (PV)** experience for AIIA / NPvCC-oriented workflows.
 
-The goal is to demonstrate how multiple clinical operations can be presented through one clear, modern interface:
+The core idea is simple:
 
-- Trial portfolio oversight
-- Site and enrolment monitoring
-- Adverse-event and safety workflows
-- Severity-based alerts
-- Role-aware navigation and controls
-- Audit-ready, hash-chained event history
+> **Bring study oversight, safety monitoring, alerts, role-based access, and auditability into one focused interface.**
 
-The current build is a **frontend-first demo** backed by seeded synthetic fixtures, so it can be explored without a separate backend.
+### SYSTEM OBJECTIVES
 
----
-
-## 🌐 Live Demo
-
-### Primary demo
-
-**https://vital-watch-kv6h1b28i-ishanrayc.vercel.app/**
-
-### Custom domain
-
-**https://vitalwatch.is-a.dev**
-
-> The custom `.is-a.dev` domain points to the same Vercel deployment once the domain registration and DNS activation are complete. The Vercel URL remains the fallback URL.
+| Module | Focus |
+| :--- | :--- |
+| 🧪 **Trial Operations** | Studies, sites, enrolment, milestones, monitoring |
+| 💊 **Pharmacovigilance** | Adverse events, severity, causality, outcomes |
+| 🚨 **Alerts** | Time-sensitive safety and operational notifications |
+| 👥 **Role Access** | Persona-aware navigation and presentation-level permissions |
+| 🔐 **Auditability** | Append-only events, hash chaining, verification |
+| 📊 **Analytics** | KPIs, trends, enrolment tracking, safety signals |
 
 ---
 
-## ✨ Features
+## 🌐 LIVE // DEPLOYMENT
+
+<div align="center">
+
+### ▶️ [OPEN VITALWATCH](https://vital-watch-sand.vercel.app/)
+
+**Live Vercel deployment**
+
+<br/>
+
+<a href="https://vital-watch-sand.vercel.app/">
+  <img src="https://img.shields.io/badge/STATUS-%E2%97%89%20ONLINE-22D3EE?style=for-the-badge&logo=vercel&logoColor=0B1118" alt="Deployment status" />
+</a>
+
+</div>
+
+---
+
+## ✨ FEATURES // CORE SYSTEMS
 
 ### 🏛️ Role-Based Access
 
-Seven demo personas with role-aware navigation and presentation-level permissions:
+Seven demo personas provide different navigation and presentation-level views:
 
-| Role | Scope | Landing |
-| --- | --- | --- |
-| Principal Investigator | Own studies | Portfolio |
-| Study Coordinator | Own sites | Portfolio |
-| Clinical Monitor | Assigned studies | Portfolio |
-| Ethics Committee | All studies | Portfolio |
-| Pharmacovigilance Officer | All studies | Pharmacovigilance |
-| Administrator | Full access + role switching | Portfolio |
-| Regulator | Read-only | Audit Trail |
+| Persona | Primary scope |
+| :--- | :--- |
+| 🧑‍⚕️ Principal Investigator | Own studies |
+| 📋 Study Coordinator | Own sites |
+| 🔎 Clinical Monitor | Assigned studies |
+| ⚖️ Ethics Committee | Cross-study oversight |
+| 💊 Pharmacovigilance Officer | Safety workflows |
+| 🛠️ Administrator | Full access + role switching |
+| 🏛️ Regulator | Read-only + audit access |
 
-### 📊 Portfolio Dashboard
+### 📊 Portfolio Command Center
 
-- Live KPI tiles for studies, enrolment, sites, queries, monitoring visits, and SAEs
+- Study, site, enrolment, query, monitoring-visit, and SAE KPIs
 - Enrolment-versus-plan visualisations
 - Severity-ranked alerts
-- Sortable study grid
+- Sortable study overview
 - Automatic alert refresh
 
-### 🔬 Study Drill-Down
+### 🔬 Study Intelligence
 
 - Protocol and CTRI status
-- EC approval window
-- Enrolment curve
-- Milestone timeline
+- Ethics approval windows
+- Enrolment curves
+- Milestone timelines
 - Site activation tracking
 - Protocol deviation history
 - Open data queries
 
-### 💊 Pharmacovigilance
+### 💊 Pharmacovigilance Desk
 
 - Adverse-event intake
-- Severity, causality, outcome, and suspect-drug fields
+- Severity, causality, outcome, and suspect-drug capture
 - Coding suggestions with provenance
 - SAE deadline countdowns
 - AE filtering
 - DSMB signal aggregation
 
-### 🚨 Alerts & Notifications
+### 🚨 Alert Engine
 
 - Enrolment lag
 - Ethics renewals
 - CTRI updates
 - Overdue monitoring visits
 - SAE timeline breaches
-- Alert acknowledgement and audit logging
+- Alert acknowledgement with audit logging
 
 ### 🔐 Audit Trail
 
 - Append-only event history
 - Hash chaining
-- Before/after change view
-- One-click chain verification
+- Before/after change inspection
+- Chain verification
 - Actor, role, and date filtering
 
-### 🌙 UX & Design
+### 🌙 Interface
 
-- Dark mode by default
-- Light/dark theme toggle
+- Dark-first visual system
+- Light / dark theme toggle
 - Responsive layouts
 - Motion-based transitions
 - Skeleton loading states
 - Keyboard and accessibility considerations
-- Self-contained CSS ambient background with no Lovable-hosted runtime assets
+- Self-contained visual background with no Lovable-hosted runtime assets
 
 ---
 
-## 🧭 How to Use the Demo
+## 🧭 DEMO // HOW TO USE
 
-1. Open the [live demo](https://vital-watch-kv6h1b28i-ishanrayc.vercel.app/).
-2. Click **Sign in**.
-3. Choose any demo persona — no account creation is required.
-4. Explore **Portfolio**, **Study**, **Alerts**, **Pharmacovigilance**, and **Audit Trail**.
-5. Try **Administrator → View as** to preview different role perspectives.
-6. Open **Audit Trail** and use the verification control to inspect the hash chain.
+### 01 — Open
 
-### Demo personas
+Go to **[vital-watch-sand.vercel.app](https://vital-watch-sand.vercel.app/)**.
 
-| Persona | What to explore |
-| --- | --- |
-| Administrator | Role switching and full dashboard navigation |
-| Pharmacovigilance Officer | AE intake, safety signals, and reporting clocks |
-| Regulator | Read-only interface and audit trail |
-| Principal Investigator | Study portfolio and study-level oversight |
-| Study Coordinator | Site-focused workflow |
-| Clinical Monitor | Assigned-study monitoring |
-| Ethics Committee | Cross-study oversight |
+### 02 — Sign in
+
+Click **Sign in** on the landing page.
+
+### 03 — Pick a persona
+
+Choose any demo persona. **No account creation is required.**
+
+### 04 — Explore the system
+
+**Portfolio** → **Study** → **Alerts** → **Pharmacovigilance** → **Audit Trail**
+
+### 05 — Switch perspective
+
+Use **Administrator → View as** to preview different role experiences.
+
+### 06 — Verify the chain
+
+Open **Audit Trail** and use the verification control to inspect the event hash chain.
+
+### QUICK TOUR
+
+| Start here | Try this |
+| :--- | :--- |
+| 🛠️ Administrator | Role switching + complete dashboard |
+| 💊 Pharmacovigilance Officer | AE intake + safety signals + reporting clocks |
+| 🏛️ Regulator | Read-only workflows + audit trail |
+| 🧑‍⚕️ Principal Investigator | Study portfolio + oversight |
+| 📋 Study Coordinator | Site-focused operations |
+| 🔎 Clinical Monitor | Assigned-study monitoring |
+| ⚖️ Ethics Committee | Cross-study review |
 
 ---
 
-## 🛠️ Tech Stack
+## 🧰 STACK // TECHNOLOGY
 
 | Layer | Technology |
-| --- | --- |
-| Framework | React 19 |
-| Language | TypeScript 5 |
-| Build tool | Vite 8 |
-| Routing | TanStack Router v1 |
-| Data fetching | TanStack Query v5 |
-| Styling | Tailwind CSS v4 |
-| Components | Radix UI + shadcn/ui patterns |
-| Animation | Motion |
-| Charts | Recharts |
-| Icons | Lucide React |
-| Validation | Zod |
-| Runtime / deployment | TanStack Start + Nitro + Vercel |
+| :--- | :--- |
+| ⚛️ UI | React 19 |
+| 🟦 Language | TypeScript 5 |
+| ⚡ Build | Vite 8 |
+| 🧭 Routing | TanStack Router v1 |
+| 🔄 Data | TanStack Query v5 |
+| 🎨 Styling | Tailwind CSS v4 |
+| 🧩 Components | Radix UI + shadcn/ui patterns |
+| ✨ Motion | Motion |
+| 📈 Charts | Recharts |
+| 🖱️ Icons | Lucide React |
+| ✅ Validation | Zod |
+| ☁️ Runtime | TanStack Start + Nitro + Vercel |
 
 ---
 
-## 🏗️ Architecture
+## 🏗️ ARCHITECTURE // MAP
 
-```text
-src/
-├── routes/                  # File-based application routes
-│   ├── __root.tsx           # Root layout, providers, error/404 handling
-│   ├── index.tsx            # Public landing page
-│   ├── login.tsx            # Demo role selection
-│   ├── sign-up.tsx          # Access request information
-│   ├── portfolio.tsx        # Portfolio dashboard
-│   ├── study.$studyId.tsx   # Study drill-down
-│   ├── alerts.tsx           # Alert log
-│   ├── ae.tsx               # Pharmacovigilance / AE intake
-│   └── audit.tsx            # Audit trail and verification
+~~~text
+VITalWatch/
+├── public/
+│   └── favicon.png
 │
-├── components/
-│   ├── ui/                  # Reusable UI primitives
-│   └── vw/                  # VITalWatch domain components
+├── src/
+│   ├── routes/
+│   │   ├── __root.tsx
+│   │   ├── index.tsx
+│   │   ├── login.tsx
+│   │   ├── sign-up.tsx
+│   │   ├── portfolio.tsx
+│   │   ├── study.$studyId.tsx
+│   │   ├── alerts.tsx
+│   │   ├── ae.tsx
+│   │   └── audit.tsx
+│   │
+│   ├── components/
+│   │   ├── ui/
+│   │   └── vw/
+│   │
+│   ├── lib/
+│   │   ├── api.ts
+│   │   ├── auth.tsx
+│   │   ├── roles.ts
+│   │   ├── format.ts
+│   │   └── utils.ts
+│   │
+│   ├── data/
+│   │   └── fixtures.ts
+│   │
+│   └── types/
+│       └── vitalwatch.ts
 │
-├── lib/
-│   ├── api.ts               # Centralised API / stub client
-│   ├── auth.tsx             # Demo auth / session layer
-│   ├── roles.ts             # Roles, navigation, RBAC helpers
-│   ├── format.ts            # Formatting utilities
-│   └── utils.ts             # Shared utilities
-│
-├── data/
-│   └── fixtures.ts          # Seeded synthetic demo data
-│
-└── types/
-    └── vitalwatch.ts        # Domain type definitions
-```
+└── vercel.json
+~~~
 
-### Stub mode
+### Stub-first architecture
 
-The application is designed to work without a backend:
+VITalWatch works without a backend through seeded fixture data:
 
-```bash
+~~~env
 VITE_STUB_MODE=true
-```
+~~~
 
-For a future live backend configuration:
+Future live API configuration can be introduced through:
 
-```bash
+~~~env
 VITE_STUB_MODE=false
 VITE_API_URL=https://api.example.org
-```
+~~~
 
-All API access is centralised in `src/lib/api.ts`, keeping UI components decoupled from backend implementation details.
+API access is centralised in **src/lib/api.ts** so the UI stays decoupled from backend implementation details.
 
 ---
 
-## 🚀 Run Locally
+## 🚀 DEVELOPMENT // LOCAL
 
 ### Prerequisites
 
 - **Node.js 20+** or **Bun**
-- Git
+- **Git**
 
-### 1. Clone the repository
+### Clone
 
-```bash
+~~~bash
 git clone https://github.com/IshanRayC/VITalWatch.git
 cd VITalWatch
-```
+~~~
 
-### 2. Install dependencies
+### Install
 
 Using npm:
 
-```bash
+~~~bash
 npm install
-```
+~~~
 
-Or using Bun:
+Or Bun:
 
-```bash
+~~~bash
 bun install
-```
+~~~
 
-### 3. Start the development server
+### Run
 
-```bash
+~~~bash
 npm run dev
-```
+~~~
 
-Then open **http://localhost:5173**.
+Then open:
 
-### 4. Create a production build
+**http://localhost:5173**
 
-```bash
+### Build
+
+~~~bash
 npm run build
-```
+~~~
 
-### 5. Preview the production build
+### Preview
 
-```bash
+~~~bash
 npm run preview
-```
+~~~
 
 ---
 
-## ☁️ Deploy to Vercel
+## ☁️ DEPLOYMENT // VERCEL
 
 VITalWatch is configured for **Vercel + TanStack Start + Nitro**.
 
-### Easiest method
-
 1. Open [Vercel New Project](https://vercel.com/new).
 2. Sign in with GitHub.
-3. Import **`IshanRayC/VITalWatch`**.
+3. Import **IshanRayC/VITalWatch**.
 4. Keep the repository root as the project root.
 5. Let Vercel detect the project configuration.
 6. Click **Deploy**.
 
-Because the demo uses synthetic stub data by default, no backend is required for the public demo.
-
-### Custom domain
-
-To connect `vitalwatch.is-a.dev`, use the is-a.dev registration process and then add the domain under:
-
-**Vercel → Project → Settings → Domains**
-
-For the current registration request, see [PR #52994](https://github.com/is-a-dev/register/pull/52994).
+No separate backend is required for the current synthetic-data demo.
 
 ---
 
-## 🔒 Security & Data Notes
+## 🔒 SECURITY // DATA
 
-- This repository contains **synthetic demo data only**.
-- The application is a prototype and should not be used with real patient information.
-- The regulator interface demonstrates UI-level read-only controls; this build does not provide production-grade server-side RBAC.
-- Backend integration, production authentication, persistence, and regulatory validation are outside the current demo scope.
-
----
-
-## 📁 Repository
-
-**GitHub:** https://github.com/IshanRayC/VITalWatch
-
-**Owner:** [@IshanRayC](https://github.com/IshanRayC)
+- 🧪 Synthetic demo data only
+- 🚫 Not for real patient information
+- 🛡️ Regulator controls are presentation-level in this build
+- 🔑 Production authentication and server-side RBAC are outside the current demo scope
+- 🗄️ Persistence and backend integration are intentionally separated from the frontend prototype
 
 ---
 
-## 👤 Author
+## 👤 AUTHOR // ISHAN RAY CHAUDHURI
 
 <div align="center">
 
 <a href="https://github.com/IshanRayC">
-  <img src="https://img.shields.io/badge/Ishan%20Ray%20Chaudhuri-GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="Ishan Ray Chaudhuri on GitHub" />
+  <img src="https://img.shields.io/badge/GITHUB-ISHANRAYC-0B1118?style=for-the-badge&logo=github&logoColor=22D3EE" alt="GitHub" />
+</a>
+<a href="https://www.linkedin.com/in/ishan-ray-chaudhuri/">
+  <img src="https://img.shields.io/badge/LINKEDIN-06B6D4?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
+</a>
+<a href="https://leetcode.com/u/IshanRayC">
+  <img src="https://img.shields.io/badge/LEETCODE-22D3EE?style=for-the-badge&logo=leetcode&logoColor=0B1118" alt="LeetCode" />
+</a>
+<a href="https://codeforces.com/profile/IshanRayC">
+  <img src="https://img.shields.io/badge/CODEFORCES-0EA5E9?style=for-the-badge&logo=codeforces&logoColor=white" alt="Codeforces" />
+</a>
+<a href="https://www.kaggle.com/ishanrayc">
+  <img src="https://img.shields.io/badge/KAGGLE-0891B2?style=for-the-badge&logo=kaggle&logoColor=white" alt="Kaggle" />
 </a>
 
-<br />
+<br/><br/>
 
 <sub>Computer Science · Software Engineering · AI/ML · Data Science</sub>
 
@@ -359,12 +374,20 @@ For the current registration request, see [PR #52994](https://github.com/is-a-de
 
 ---
 
-## 📄 License
+## 📁 REPOSITORY // LINKS
 
-No license file is currently included in this repository. Add an explicit `LICENSE` file before distributing or reusing the project under specific open-source terms.
+| Resource | Link |
+| :--- | :--- |
+| 🌐 Live Demo | [vital-watch-sand.vercel.app](https://vital-watch-sand.vercel.app/) |
+| 💻 Source Code | [IshanRayC/VITalWatch](https://github.com/IshanRayC/VITalWatch) |
+| 👤 GitHub | [@IshanRayC](https://github.com/IshanRayC) |
+
+---
 
 <div align="center">
 
-### Built with ❤️ for Smart India Hackathon
+### // BUILT WITH ❤️ FOR SMART INDIA HACKATHON
+
+<sub>VITalWatch • Clinical Trial Management & Pharmacovigilance • Synthetic Demo System</sub>
 
 </div>
